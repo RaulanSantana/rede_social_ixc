@@ -1,0 +1,9 @@
+<?php 
+include_once('conexao.php');
+
+
+$query= "SELECT COUNT(usuario_seguido) AS total_seguidores FROM seguidores WHERE usuario_seguido = :usuario_seguido";
+$stmt = $conexao->prepare($query);
+$stmt->bindParam(':usuario_seguido',)
+
+?>
